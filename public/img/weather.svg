@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" version="1.1">
+    <!-- Background Circle (Face) with a lighter color -->
+    <circle cx="100" cy="100" r="100" fill="#F4C430" stroke="#ffbc55" stroke-width="2"/>
+
+    <!-- Left Eye White (Smaller and Oval) -->
+    <ellipse cx="65" cy="85" rx="30" ry="42" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+
+    <!-- Right Eye White (Smaller and Oval) -->
+    <ellipse cx="135" cy="85" rx="30" ry="42" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+
+    <!-- Left Eye Pupil (Moved Down) -->
+    <circle cx="75" cy="102" r="15" fill="black">
+        <!-- Animate the pupil's transform attribute to create slightly faster left and right movement -->
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" from="-16 0" to="1 0" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+    </circle>
+
+    <!-- Right Eye Pupil (Moved Down) -->
+    <circle cx="125" cy="102" r="15" fill="black">
+        <!-- Animate the pupil's transform attribute to create slightly faster left and right movement -->
+        <animateTransform attributeName="transform" attributeType="XML" type="translate" from="-1 0" to="16 0" dur="3s" repeatCount="indefinite" calcMode="spline" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+    </circle>
+
+    <!-- Cuter Smile with Black Border -->
+<path d="M50 155 Q100 190 150 155" fill="#ff2b00" stroke="black" stroke-width="4"/>
+  
+</svg>

@@ -1,0 +1,330 @@
+body{
+    color:whitesmoke;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px 8px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+     background-image: url("/img/background.avif");
+    background-size: cover; 
+    overflow-y: scroll;
+    height: 1200px;
+}
+
+.main-content{
+    flex-grow: 1;
+    margin-top: 0px !important;
+}
+footer{
+    color: white;
+    border-top: 3px solid yellow;
+    padding: 15px;
+    height: 30vh;
+    background: linear-gradient(
+        to right,
+        rgb(5, 1, 36),
+        rgb(3, 4, 56),
+        rgb(7, 4, 36),
+        rgb(10, 6, 51),
+        rgb(11, 6, 59)
+      );
+      border-radius: 18px;
+      margin-bottom: 4px;
+}
+
+header{
+    margin-bottom: 50px;
+    margin-top: 0px !important;
+    background: linear-gradient(
+        to right,
+        rgb(5, 1, 36),
+        rgb(3, 4, 56),
+        rgb(7, 4, 36),
+        rgb(10, 6, 51),
+        rgb(11, 6, 59)
+      );
+      padding-bottom: 18px;
+      position: sticky;
+      top: 5px;
+      z-index: 1;
+      width:100%;
+      border-radius: 18px;
+     
+}
+
+h1{
+    font-size: 54px;
+    margin-bottom: 16px;
+    margin-top: 0px;
+    font-family: 'Architects Daughter', cursive;
+    padding-left: 4px;
+}
+
+header a{
+    color:darkgray;
+    margin-right: 16px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+header a:hover{
+    color: whitesmoke;
+}
+
+header h3{
+    justify-content: end;
+    position: absolute;
+    bottom: 4vh;
+    right: 2vw;
+    color: rgb(24, 18, 117);
+    background: linear-gradient(
+        to right,
+        rgb(196, 105, 31),
+        rgb(209, 216, 216),
+        rgb(39, 175, 95)
+      );
+    padding: 4px 8px 4px 8px;
+    box-shadow: 0px 0px 6px 6px rgb(53, 51, 51);
+    border-radius: 20px;
+    font-family: 'Cookie', cursive;
+}
+
+.portrait{
+    width: 150px;
+    height:200px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 4px 4px #49a6db;
+}
+
+
+.button-search{
+    box-shadow: 0px 0px 2px 2px rgb(135, 206, 235);
+    margin-left: 10px;
+    background-color: #1d5dbe;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-search:hover {
+    color: black;
+    background: rgb(144, 199, 227);
+  }
+  
+.searchform{
+    border: 1px solid white;
+     align-self: center;
+    width:450px;
+    height: 50vh;
+    padding: 4em 8em 6em 8em; /*u/r/d/l*/
+    margin:0px; 
+    position: absolute;
+    text-align: center;
+    text-shadow: rgb(0, 255, 242) 2px 0 10px;
+    top: 40%;
+    background-size: contain;
+    border-radius: 15px;
+    background-color:#010d1a;
+    box-shadow: 0px 0px 8px 8px #20b1dd;
+}
+
+.searchform p{
+    color:yellow;
+    text-align: center;
+}
+.searchform h3{
+    color:yellow;
+    text-align: center;
+}
+.searchform input{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    background-color: #02172e;
+    box-shadow: 0px 0px 2px 2px #007BFF;
+    color: rgb(197, 184, 184);
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.search{
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+
+
+.home{
+    align-content: center;
+    border-radius: 60px;
+     box-shadow: 0px 0px 3px 3px rgb(200, 139, 40);
+    width:105px;
+    height:105px;
+}
+
+.homepic{
+    align-content: center;
+    border-radius: 60px;
+    margin-left: 168px; 
+     box-shadow: 0px 0px 3px 3px rgb(200, 139, 40);
+    width:105px;
+    height:105px;
+
+}
+.hoverpic{
+    align-content: center;
+    border-radius: 60px;
+     box-shadow: 0px 0px 3px 3px rgb(200, 139, 40);
+    width:105px;
+    height:105px;
+    transition-delay: 2s;
+    cursor: pointer;
+}  
+
+
+.homepic .hoverpic {
+    display: none; /* Hide the hover image by default */
+  }
+  
+  .homepic:hover .hoverpic {
+    display: block; /* Display the hover image on hover */
+  }
+  
+  .homepic:hover img:not(.hoverpic) {
+    display: none; /* Hide the original image on hover */
+  }
+
+.developerInfo{
+    justify-content: end;
+    position: absolute;
+    bottom: -55vh;
+    right: 2vw;
+}
+.contactIcon{
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.contactIcon img{
+    width: 30px; 
+    height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.contactIcon img:hover{
+    box-shadow:0px 0px 4px 4px #d49d27;
+}
+.copyright{
+    background-color: darkslategray;
+    margin-top: 3em;
+    text-align: center;
+}
+.about{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 8px rgb(114, 170, 216);
+    text-align: center;
+    color:rgb(208, 219, 49);
+    background-image: url("/img/abstract-binary-code-dark-background-cyber-space_158941-30.avif");
+    align-self: center;
+    position: absolute;
+    top: 30%;
+    padding: 30px;
+    margin-bottom: 20px;
+    width: fit-content;
+    height:fit-content;
+}
+.about h4{
+    background-color: #02172e;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.about h4:hover{
+    box-shadow: 0px 0px 4px 4px skyblue;
+}
+.about p{
+    background-color: #02172e;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about p:hover{
+    box-shadow: 0px 0px 4px 4px skyblue;
+}
+
+/* Enquiry form css starts here */
+.container {
+    width: 40vw;
+    padding: 50px;
+    border: solid black 2px;
+    background-color: rgb(6, 3, 15);
+    align-self: center;
+    position: absolute;
+    top: 35%;
+    border-radius: 15px;
+    box-shadow: #d49d27 0px 0px 8px 8px;
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+ .container input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(9, 26, 32);
+    box-shadow: 0px 0px 2px 2px skyblue;
+    border-radius: 15px;
+    color: rgb(197, 184, 184);
+    background-color:#02172e;
+}
+/* input:focus{
+    background-color:transparent !important;
+    outline: none !important;
+} */
+
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(9, 26, 32);
+    box-shadow: 0px 0px 2px 2px skyblue;
+    border-radius: 15px;
+    color: rgb(197, 184, 184);
+    background-color:#02172e;
+
+}
+::placeholder{
+    color:rgb(124, 122, 119);
+}
+/* input[type="textarea"]::placeholder,
+textarea ::placeholder{
+    color: #010d1a;
+} */
+.submit-button {
+    background-color: #2363a8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px skyblue;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #66bed1;
+    color: #010d1a;
+}

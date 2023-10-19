@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/icon.jpeg"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="main-content">
+          {{>header}}
+    </div>
+      <div class="searchform">
+        <div class="homepic">
+             <img class="home"src="\img\weather.svg">
+              <img class="hoverpic"src="\img\happysun.jpeg">
+        </div>
+              <h2>{{name}}</h2>
+              <h4>{{text}}</h4>
+              <form class="search">
+                  <input placeholder="Enter location">
+                  <button class="button-search">Search</button>
+              </form>
+            <h3 id="mess1"></h3>
+            <p id="mess2"></p>
+    
+      </div>
+  
+    {{>footer}}
+     <script src="./js/app.js"></script>
+</body>
+</html>
