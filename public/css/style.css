@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     color:whitesmoke;
     font-family:Arial, Helvetica, sans-serif;
@@ -7,20 +12,32 @@ body{
     flex-direction: column;
     min-height: 100vh;
      background-image: url("/img/background.avif");
+     overflow-x: hidden;
     background-size: cover; 
     overflow-y: scroll;
-    height: 1200px;
 }
 
 .main-content{
-    flex-grow: 1;
+    min-height: 150vh;
     margin-top: 0px !important;
+    
 }
-footer{
-    color: white;
+
+.message{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color:black;
+}
+
+.parent-footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     border-top: 3px solid yellow;
     padding: 15px;
     height: 30vh;
+    align-self: baseline;
     background: linear-gradient(
         to right,
         rgb(5, 1, 36),
@@ -29,13 +46,31 @@ footer{
         rgb(10, 6, 51),
         rgb(11, 6, 59)
       );
-      border-radius: 18px;
-      margin-bottom: 4px;
+}
+.right-footer{
+    color: white;
+}
+
+.left-footer {
+    color:white;
+}
+.footer-icons{
+    display: flex;
+    gap: 2vw;
+}
+
+.footer-icons img{
+    margin-top: 7px;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.footer-icons img:hover{
+    box-shadow:0px 0px 4px 4px #d49d27;
 }
 
 header{
-    margin-bottom: 50px;
-    margin-top: 0px !important;
     background: linear-gradient(
         to right,
         rgb(5, 1, 36),
@@ -45,9 +80,8 @@ header{
         rgb(11, 6, 59)
       );
       padding-bottom: 18px;
-      position: sticky;
-      top: 5px;
-      z-index: 1;
+      position: fixed;
+      z-index: 5;
       width:100%;
       border-radius: 18px;
      
@@ -116,14 +150,14 @@ header h3{
 .searchform{
     border: 1px solid white;
      align-self: center;
-    width:450px;
-    height: 50vh;
+    max-width:40vw;
+    max-height: 50vh;
     padding: 4em 8em 6em 8em; /*u/r/d/l*/
     margin:0px; 
     position: absolute;
+    top: 40%;
     text-align: center;
     text-shadow: rgb(0, 255, 242) 2px 0 10px;
-    top: 40%;
     background-size: contain;
     border-radius: 15px;
     background-color:#010d1a;
@@ -159,22 +193,30 @@ header h3{
 
 .home{
     align-content: center;
+    position: absolute;
     border-radius: 60px;
      box-shadow: 0px 0px 3px 3px rgb(200, 139, 40);
     width:105px;
     height:105px;
 }
-
+.ImageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
 .homepic{
+    display: flex;
+    justify-content: center;
     align-content: center;
     border-radius: 60px;
-    margin-left: 168px; 
-     box-shadow: 0px 0px 3px 3px rgb(200, 139, 40);
+    box-shadow: 0px 0px 3px 3px rgb(200, 139, 40);
     width:105px;
     height:105px;
-
 }
 .hoverpic{
+    display: flex;
+    justify-content: center;
     align-content: center;
     border-radius: 60px;
      box-shadow: 0px 0px 3px 3px rgb(200, 139, 40);
@@ -197,34 +239,6 @@ header h3{
     display: none; /* Hide the original image on hover */
   }
 
-.developerInfo{
-    justify-content: end;
-    position: absolute;
-    bottom: -55vh;
-    right: 2vw;
-}
-.contactIcon{
-    display: inline-block;
-    margin-right: 20px;
-    text-decoration: none;
-    color: white;
-}
-
-.contactIcon img{
-    width: 30px; 
-    height: 30px;
-    margin: 5px;
-    border-radius: 10px;
-}
-
-.contactIcon img:hover{
-    box-shadow:0px 0px 4px 4px #d49d27;
-}
-.copyright{
-    background-color: darkslategray;
-    margin-top: 3em;
-    text-align: center;
-}
 .about{
     border: 1px solid black;
     border-radius: 15px;
@@ -237,8 +251,8 @@ header h3{
     top: 30%;
     padding: 30px;
     margin-bottom: 20px;
-    width: fit-content;
-    height:fit-content;
+    max-width: 40vw;
+    max-height:60vh;
 }
 .about h4{
     background-color: #02172e;
@@ -250,6 +264,7 @@ header h3{
 }
 .about p{
     background-color: #02172e;
+    margin: 7px;
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -257,6 +272,7 @@ header h3{
 .about p:hover{
     box-shadow: 0px 0px 4px 4px skyblue;
 }
+
 
 /* Enquiry form css starts here */
 .container {
@@ -293,10 +309,6 @@ label {
     color: rgb(197, 184, 184);
     background-color:#02172e;
 }
-/* input:focus{
-    background-color:transparent !important;
-    outline: none !important;
-} */
 
 .container textarea {
     width: 100%;
@@ -311,10 +323,7 @@ label {
 ::placeholder{
     color:rgb(124, 122, 119);
 }
-/* input[type="textarea"]::placeholder,
-textarea ::placeholder{
-    color: #010d1a;
-} */
+
 .submit-button {
     background-color: #2363a8;
     color: #fff;

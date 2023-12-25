@@ -20,7 +20,7 @@
             messagetwo.textContent = ""
             //for local host to run on system
              fetch('/weather?address='+location).then((response)=>{ // this is for both heroku and localhost
-            //  fetch('http://localhost:3000/weather?address='+location).then((response)=>{ 
+            //  fetch('http://localhost:3000/weather?address='+location).then((response)=>
             response.json().then((data)=>{
             if(data.error){
                 // console.log(data.error)
