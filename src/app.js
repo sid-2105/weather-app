@@ -93,29 +93,3 @@ app.listen(3000,()=>{
      console.log("Server is running at port:" +port)
 })
 
-
-// //app.com/help
-// app.get('/help',(req,res)=>{
-//     res.send({
-//         name:"Siddharth",
-//         age:21
-//     })
-// })
-
-// //app.com/about
-// app.get('/about',(req,res)=>{
-//     res.send("<h3>Don't know about me!</h3>")
-// })
-
-
-//app.get('/products',(req,res)=>{
-    //     if(!req.query.search){
-    //        return res.send({
-    //             error:'you must provide search here'
-    //         })
-    //     }
-    //     console.log(req.query)
-    //     res.send({
-    //         products:[]
-    //     })
-    // })
